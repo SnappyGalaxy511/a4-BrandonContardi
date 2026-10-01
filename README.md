@@ -1,8 +1,8 @@
 ## Car Fleet Tracker (React)
 
-TODO: add hosting link (e.g. https://a4-brandoncontardi.onrender.com/)
+Link: https://a4-brandoncontardi-1.onrender.com 
 
-This is my Assignment 3 Car Fleet Tracker with the client side of the fleet page re-implemented using **React**
+This is my Assignment 3 Car Fleet Tracker with the client side of the fleet page re-implemented using React
 components (built with Vite). The Express server, MongoDB/Mongoose models, session-based login, and the login page
 itself are unchanged from A3. The old `views/app.html` + `public/js/main.js` (which manually built table rows with
 `document.createElement` and read/wrote form fields with `querySelector`) was replaced by a React app in `client/`:
@@ -13,8 +13,7 @@ itself are unchanged from A3. The old `views/app.html` + `public/js/main.js` (wh
 - `CarTable.jsx` / `CarRow.jsx` render the fleet table (with an empty-state row, and the row being edited highlighted).
 - `api.js` wraps the `fetch` calls and redirects to the login page on a 401.
 
-The server builds the React app into `dist/` and serves it at `/app` only to logged-in users, exactly like the A3 page
-was. Styling is still Bulma plus the small `public/css/main.css`.
+The server builds the React app into `dist/` and serves it at `/app` only to logged-in users. Styling is still Bulma plus the small `public/css/main.css`.
 
 **Did the new technology improve or hinder the development experience?** Overall it improved it. In A3, every change to
 the data meant manually clearing and rebuilding the table and keeping the form, the "editing" state, and the button
@@ -33,10 +32,7 @@ npm run build
 npm start
 ```
 
-Visit http://localhost:3000. For hot-reload development, run `npm run dev:server` and `npm run dev` together, log in at
-http://localhost:3000, then open http://localhost:5173/app/ (cookies aren't port-specific, so the session carries over).
-
-**Deploying (e.g. Render):** build command `npm install && npm run build`, start command `npm start`.
+Visit http://localhost:3000.
 
 ## AI Usage
 AI was used to help convert the A3 client-side JavaScript into React components and to draft this README. I checked the
